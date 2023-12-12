@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://png.pngtree.com/thumb_back/fh260/background/20220523/pngtree-abstract-colorful-for-sports-background-image_1392220.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50px;
+    left: 0;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: red;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid blue;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+span{
+    background:#009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.container{
+    background-color: rgba(0,0,87,0.3);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.head{
+    text-align: center;
+    padding-bottom: 15px;
+    color:red;
+    font-size: 40px;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.box{
+    height: 150px;
+    width: 350px;
+    margin-top: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #e8dddd;
+    text-align: center;
+    padding: 10px 10px;
+}
+.box img{
+    height: 90px;
+    width: 150px;
+    padding-left: 20px;
+    padding-top:30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+
+}
+.box:hover{
+    box-shadow: 0 10px 15px rgba(0.9,0.9,0.9,0.9);
+    transform: scale(1.02);
+}
+.cf{
+    background: fixed;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 12px 12px;
+    text-decoration: underline red;
+    text-underline-offset: 8px;
+}
+.ig{
+    float: right;
+    width: 700px;
+    padding-bottom: 40px;
+}
+p{
+    display: grid;
+    justify-content: center;
+    text-align: justify;
+    padding: 1px 50px;
+    font-size: 15px;
+}
+.contact-form {
+    max-width: 500px;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.form-group textarea {
+    height: 100px;
+}
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
